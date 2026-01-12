@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={logo} alt="Vidyamitra Logo" style={{ height: '85px', marginLeft: '10px' }} />
+          <img src={logo} alt="Vidyamitra Logo" className="navbar-logo-img" />
         </Link>
       </div>
       <div className="navbar-links">

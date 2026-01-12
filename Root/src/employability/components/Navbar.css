@@ -31,3 +31,38 @@
 .nav-link:hover {
   color: #11998e;
 }
+
+.navbar-logo-img {
+  height: 85px;
+  margin-left: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 968px) {
+  .navbar {
+    position: relative;
+    /* layout normally on mobile */
+    flex-direction: column;
+    padding: 1rem;
+    background: white;
+    /* ensuring visibility */
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-logo-img {
+    height: 60px;
+    margin-left: 0;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
