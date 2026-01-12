@@ -1,0 +1,86 @@
+/* Base Styles (Desktop) */
+.home-page {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+}
+
+.main-title {
+    color: #800080;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.logo-text-wrapper {
+    text-align: right;
+}
+
+.logo-text {
+    color: #ff9900;
+    font-size: 3em;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    letter-spacing: 5pt;
+    line-height: 1.2;
+    display: block;
+}
+
+.book-stack-img {
+    height: 410px;
+    width: auto;
+    max-width: 100%;
+}
+
+.footer-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.disclaimer-section {
+    font-size: 0.8em;
+    margin-top: 40px;
+    text-align: left;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.5em;
+        /* Smaller title */
+    }
+
+    .logo-container {
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 10px;
+    }
+
+    .logo-text-wrapper {
+        text-align: center;
+        /* Center align text */
+        margin-right: 0;
+    }
+
+    .logo-text {
+        font-size: 2em;
+        /* Smaller logo text */
+        letter-spacing: 2px;
+    }
+
+    .book-stack-img {
+        height: auto;
+        width: 60%;
+        /* Smaller image */
+        max-width: 250px;
+    }
+}
