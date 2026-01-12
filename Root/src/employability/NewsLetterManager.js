@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import logo from "./assets/vidyamitra_logo.png";
 import "./NewsLetterManager.css";
+import API_URL from '../apiConfig';
 
 function NewsLetterManager() {
     const [newsletters, setNewsletters] = useState([]);

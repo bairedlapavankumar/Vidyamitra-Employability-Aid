@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import logo from "./assets/vidyamitra_logo.png";
 import "./StudentJoineesManager.css";
+import API_URL from '../apiConfig';
 
 function StudentJoineesManager() {
     const [profiles, setProfiles] = useState([]);
