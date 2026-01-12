@@ -9,6 +9,7 @@ function UserDashboard() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState("");
   const [loading, setLoading] = useState(true);
+  const [showFolders, setShowFolders] = useState(false); // Mobile toggle
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -91,12 +92,20 @@ function UserDashboard() {
       </header>
 
       <div className="dashboard-container">
-        <aside className="sidebar">
+        {/* Mobile Folder Toggle */}
+        <button className="mobile-folder-toggle" onClick={() => setShowFolders(!showFolders)}>
+          {showFolders ? '✖ Close Folders' : '📁 Browse Folders'}
+        </button>
+
+        <aside className={`sidebar ${showFolders ? 'mobile-visible' : ''}`}>
           <h3>📁 Folders</h3>
           <div className="folder-list">
             <button
               className={`folder-item ${!selectedFolder ? 'active' : ''}`}
-              onClick={() => setSelectedFolder("")}
+              onClick={() => {
+                setSelectedFolder("");
+                setShowFolders(false);
+              }}
             >
               <span className="folder-icon">📂</span>
               All Materials
@@ -108,7 +117,10 @@ function UserDashboard() {
                 <button
                   key={folder.name}
                   className={`folder-item ${selectedFolder === folder.name ? 'active' : ''}`}
-                  onClick={() => setSelectedFolder(folder.name)}
+                  onClick={() => {
+                    setSelectedFolder(folder.name);
+                    setShowFolders(false);
+                  }}
                 >
                   <span className="folder-icon">📁</span>
                   {folder.name}
