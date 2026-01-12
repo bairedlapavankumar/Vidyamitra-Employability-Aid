@@ -15,7 +15,7 @@ function UserDashboard() {
   useEffect(() => {
     fetchFolders();
     fetchMaterials();
-  }, [selectedFolder]);
+  }, []);
 
   const fetchFolders = async () => {
     try {
@@ -41,9 +41,7 @@ function UserDashboard() {
   const fetchMaterials = async () => {
     setLoading(true);
     try {
-      const params = selectedFolder ? { folder: selectedFolder } : {};
       const res = await axios.get("/api/materials/materials", {
-        params,
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -61,8 +59,13 @@ function UserDashboard() {
     navigate("/");
   };
 
+  // Filter materials based on selection
+  const filteredMaterials = selectedFolder
+    ? materials.filter(m => m.folder === selectedFolder)
+    : materials;
+
   // Group materials by folder
-  const groupedMaterials = materials.reduce((acc, material) => {
+  const groupedMaterials = filteredMaterials.reduce((acc, material) => {
     const folder = material.folder || 'Uncategorized';
     if (!acc[folder]) {
       acc[folder] = [];
@@ -142,7 +145,7 @@ function UserDashboard() {
             </div>
           )}
 
-          {materials.length === 0 ? (
+          {filteredMaterials.length === 0 ? (
             <div className="empty-state">
               <div className="empty-icon">📭</div>
               <h3>No materials found</h3>
