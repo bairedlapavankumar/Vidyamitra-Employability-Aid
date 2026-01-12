@@ -24,12 +24,12 @@ const Home = () => {
                     Next
                 </a>
                 <br />
-                <span style={{ fontSize: '0.8em' }}>Updated :03/12/2025</span>
+                <span style={{ fontSize: '0.8em' }}>Updated :12/01/2026</span>
             </div>
 
             <div className="disclaimer-section">
                 <p>a) All donations are eligible for Income Tax Exemption under section 80G (5 ) (vi ) of I.T. Act 1961, vide F.No. DIT(E) Hyd / 80G / 27 (09 ) 07 - 08.</p>
-                <p>b) FCRA Registration No.:010230904 Dt.08/08/12 Category - Educational</p>
+
             </div>
         </div>
     );
