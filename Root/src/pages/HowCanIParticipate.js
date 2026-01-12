@@ -182,7 +182,7 @@ const HowCanIParticipate = () => {
 
                 <h3 style={{ marginTop: '20px', textDecoration: 'underline' }}>ALL CONTRIBUTIONS ARE ELIGIBLE FOR INCOME TAX EXEMPTION AS PER DETAILS GIVEN BELOW:</h3>
                 <p>a) All donations are eligible for <strong>Income Tax Exemption</strong> under section 80G (5 ) (vi ) of I.T. Act 1961, vide F.No. DIT(E) Hyd / 80G / 27 (09 ) 07 - 08.</p>
-                <p>b) FCRA Registration No.:010230904 Dt.08/08/12 Category - Educational</p>
+
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
