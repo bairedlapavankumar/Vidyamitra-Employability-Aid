@@ -4,6 +4,7 @@ import axios from "axios";
 import { Pie, Bar } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from "chart.js";
 import logo from "./assets/vidyamitra_logo.png";
+import "./PictorialDashboard.css";
 
 ChartJS.register(ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
@@ -63,43 +64,30 @@ function PictorialDashboard() {
   };
 
   return (
-    <div style={{ padding: "32px", textAlign: "center" }}>
-      <img src={logo} alt="Vidyamitra Logo" style={{ position: 'absolute', top: '20px', left: '20px', height: '100px', zIndex: 1000 }} />
-      <button
-        onClick={() => navigate("/employability-aid/admin")}
-        style={{
-          position: "absolute",
-          top: "20px",
-          right: "20px",
-          padding: "10px 20px",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer"
-        }}
-      >
-        Back
-      </button>
-      <h2>Pictorial Dashboard</h2>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "40px",
-          marginTop: "32px",
-        }}
-      >
-        <div>
+    <div className="pictorial-dashboard">
+      <div className="pictorial-header">
+        <img src={logo} alt="Vidyamitra Logo" className="pictorial-logo" />
+        <h2 className="pictorial-title">Pictorial Dashboard</h2>
+        <button
+          onClick={() => navigate("/employability-aid/admin")}
+          className="pictorial-back-btn"
+        >
+          Back
+        </button>
+      </div>
+
+      <div className="charts-container">
+        <div className="chart-wrapper">
           <h3>User Distribution (Pie Chart)</h3>
           <Pie data={pieData} />
         </div>
-        <div>
+        <div className="chart-wrapper">
           <h3>User Distribution (Bar Chart)</h3>
           <Bar data={barData} />
         </div>
       </div>
-      <div style={{ marginTop: "40px" }}>
+
+      <div className="summary-section">
         <h3>Summary</h3>
         <p>
           <strong>Admins:</strong> {admins}
