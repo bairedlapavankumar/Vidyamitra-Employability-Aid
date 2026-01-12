@@ -199,14 +199,15 @@
   }
 
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh !important;
     transform: translateX(-100%);
     /* Hidden by default */
     width: 260px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 2000 !important;
   }
 
   /* When Open */
