@@ -196,6 +196,8 @@
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
+    z-index: 2200;
+    /* Higher than sidebar so it remains clickable */
   }
 
   .sidebar {
@@ -208,11 +210,15 @@
     width: 260px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     z-index: 2000 !important;
+    background: white !important;
+    /* Ensure background is opaque */
+    display: block !important;
+    /* Force display */
   }
 
   /* When Open */
   .sidebar.mobile-open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
 
   /* Overlay when sidebar is open */
@@ -223,6 +229,9 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 1500;
+    /* Below sidebar, above content */
+    backdrop-filter: blur(2px);
+    /* Add blur for better visibility */
   }
 }
