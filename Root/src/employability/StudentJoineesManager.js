@@ -74,14 +74,16 @@ function StudentJoineesManager() {
 
     return (
         <div className="joinees-container">
-            <img src={logo} alt="Vidyamitra Logo" style={{ position: 'absolute', top: '20px', left: '20px', height: '100px', zIndex: 1000 }} />
-            <button
-                onClick={() => navigate("/admins")}
-                className="btn-back"
-            >
-                Back
-            </button>
-            <div className="joinees-title">Student Joinees</div>
+            <div className="joinees-header">
+                <img src={logo} alt="Vidyamitra Logo" className="joinees-logo" />
+                <h2 className="joinees-title">Student Joinees</h2>
+                <button
+                    onClick={() => navigate("/employability-aid/admin")}
+                    className="joinees-back-btn"
+                >
+                    Back
+                </button>
+            </div>
 
             {error && <div className="joinees-error">{error}</div>}
 
