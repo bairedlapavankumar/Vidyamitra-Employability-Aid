@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 25px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.03);
+  font-family: 'Outfit', sans-serif;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 8px;
+}
+
+.sidebar-list a {
+  text-decoration: none;
+  color: #495057;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-list a:hover {
+  background-color: #fff;
+  color: #228be6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transform: translateX(3px);
+}
+
+.sidebar-list li.section-header {
+  font-weight: 700;
+  color: #343a40;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  padding: 10px 12px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-list li.section-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #1c7ed6;
+}
+
+.arrow {
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+  opacity: 0.6;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.nested-list {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 5px;
+  border-left: 2px solid #dee2e6;
+  margin-left: 12px;
+}
+
+.nested-list li {
+  margin-bottom: 4px;
+}
+
+.nested-list a {
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #6c757d;
+}
+
+.nested-list a:hover {
+  color: #228be6;
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateX(3px);
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for restricted links (Student Joinees) to match 'a' tags */
+.sidebar-list .restricted-link {
+  text-decoration: none;
+  color: #495057;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.sidebar-list .restricted-link:hover {
+  background-color: #fff;
+  color: #228be6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transform: translateX(3px);
+}
+
+.nested-list .restricted-link {
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #6c757d;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nested-list .restricted-link:hover {
+  color: #228be6;
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateX(3px);
+}

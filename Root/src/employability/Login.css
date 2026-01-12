@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.login-card h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1a1a1a;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-card form {
+  width: 100%;
+}
+
+.login-card input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #e1e1e1;
+  background: #f8f9fa;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect width */
+}
+
+.login-card input:focus {
+  border-color: #2473fa;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(36, 115, 250, 0.1);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2473fa 0%, #0056b3 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(36, 115, 250, 0.3);
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(36, 115, 250, 0.4);
+}
+
+.login-card button:active {
+  transform: translateY(0);
+}
+
+.login-error {
+  color: #d43d2e;
+  background: #fff5f5;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+  border: 1px solid #ffe3e3;
+  box-sizing: border-box;
+}
+
+.login-card p {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  margin: 0;
+}
+
+.login-card a {
+  color: #2473fa;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.3rem;
+  transition: color 0.2s;
+}
+
+.login-card a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

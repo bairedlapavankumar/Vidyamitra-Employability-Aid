@@ -1,0 +1,54 @@
+.page-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+    /* Add padding to prevent logo from overlapping content */
+}
+
+.admins-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    z-index: 1000;
+}
+
+.admin-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-option-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.admin-option-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
+}
+
+.admin-option-card h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.admin-option-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
