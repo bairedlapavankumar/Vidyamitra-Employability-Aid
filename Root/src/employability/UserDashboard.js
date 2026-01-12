@@ -100,7 +100,7 @@ function UserDashboard() {
           {showFolders ? '✖ Close Folders' : '📁 Browse Folders'}
         </button>
 
-        <aside className={`sidebar ${showFolders ? 'mobile-visible' : ''}`}>
+        <aside className={`dashboard-sidebar ${showFolders ? 'mobile-visible' : ''}`}>
           <h3>📁 Folders</h3>
           <div className="folder-list">
             <button

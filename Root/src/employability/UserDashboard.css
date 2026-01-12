@@ -58,7 +58,7 @@
     padding: 0 2rem;
 }
 
-.sidebar {
+.dashboard-sidebar {
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
@@ -68,7 +68,7 @@
     top: 2rem;
 }
 
-.sidebar h3 {
+.dashboard-sidebar h3 {
     margin: 0 0 1rem 0;
     color: #333;
     font-size: 1.2rem;
@@ -310,7 +310,7 @@
         grid-template-columns: 1fr;
     }
 
-    .sidebar {
+    .dashboard-sidebar {
         display: none;
         /* Hidden by default on mobile */
         position: fixed;
@@ -322,11 +322,14 @@
         box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
         padding-top: 2rem;
+        background: white;
+        /* Ensure background is opaque */
     }
 
-    .sidebar.mobile-visible {
-        display: block;
-        animation: slideIn 0.3s ease;
+    .dashboard-sidebar.mobile-visible {
+        display: block !important;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
     }
 
     /* Mobile Folder Toggle Button */
