@@ -13,6 +13,16 @@ const NewsletterViewer = () => {
     const pdfUrl = searchParams.get('url');
     const [content, setContent] = useState('');
     const [numPages, setNumPages] = useState(null);
+    const [pdfWidth, setPdfWidth] = useState(Math.min(window.innerWidth - 40, 800));
+
+    useEffect(() => {
+        const handleResize = () => {
+            setPdfWidth(Math.min(window.innerWidth - 40, 800));
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
@@ -118,7 +128,7 @@ const NewsletterViewer = () => {
                             pageNumber={index + 1}
                             renderTextLayer={false}
                             renderAnnotationLayer={false}
-                            width={800} // Fixed width for consistent viewing
+                            width={pdfWidth}
                             className="pdf-page"
                         />
                     ))}
