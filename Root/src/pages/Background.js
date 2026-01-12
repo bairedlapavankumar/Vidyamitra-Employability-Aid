@@ -26,6 +26,7 @@ const Background = () => {
             <div style={{ marginTop: '20px' }}>
                 <h3 style={{ fontFamily: 'Comic Sans MS', textTransform: 'uppercase', textDecoration: 'underline' }}>Founder Trustees</h3>
                 <ol style={{ listStyleType: 'decimal', marginLeft: '20px' }}>
+                    <li>G. NARAYAN RAO</li>
                     <li>G. USHA RAO</li>
                     <li>A.S. RAMA RAJU</li>
                     <li>K. SUBBA LAXMI</li>

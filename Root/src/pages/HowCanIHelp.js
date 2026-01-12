@@ -25,7 +25,7 @@ const HowCanIHelp = () => {
 
                 <div style={{ marginTop: '40px', fontSize: '12px' }}>
                     <p>All donations are eligible for Income Tax Exemption under section 80G (5 ) (vi ) of I.T. Act 1961,vide F.No. DIT(E) Hyd / 80G / 27 (09 ) 07 - 08.</p>
-                    <p>b). FCRA Registration No.:010230904 Dt.08/08/12 Category - Educational</p>
+
                 </div>
             </div>
 
