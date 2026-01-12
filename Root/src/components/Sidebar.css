@@ -9,6 +9,8 @@
   overflow-y: auto;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.03);
   font-family: 'Outfit', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .sidebar-list {
@@ -149,4 +151,77 @@
   background-color: transparent;
   box-shadow: none;
   transform: translateX(3px);
+}
+
+/* ---------------------------------------------------- */
+/* MOBILE RESPONSIVENESS                                */
+/* ---------------------------------------------------- */
+
+/* Hamburger Menu (Hidden on Desktop) */
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Styling (< 768px) */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    /* Hidden by default */
+    width: 260px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* When Open */
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  /* Overlay when sidebar is open */
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
 }
