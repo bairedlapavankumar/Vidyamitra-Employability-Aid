@@ -74,14 +74,16 @@ function NewsLetterManager() {
 
     return (
         <div className="newsletter-container">
-            <img src={logo} alt="Vidyamitra Logo" style={{ position: 'absolute', top: '20px', left: '20px', height: '100px', zIndex: 1000 }} />
-            <button
-                onClick={() => navigate("/admins")}
-                className="btn-back"
-            >
-                Back
-            </button>
-            <div className="newsletter-title">Annual News Letters</div>
+            <div className="newsletter-header">
+                <img src={logo} alt="Vidyamitra Logo" className="newsletter-logo" />
+                <h2 className="newsletter-title">Annual News Letters</h2>
+                <button
+                    onClick={() => navigate("/employability-aid/admin")}
+                    className="newsletter-back-btn"
+                >
+                    Back
+                </button>
+            </div>
 
             {error && <div className="newsletter-error">{error}</div>}
 
