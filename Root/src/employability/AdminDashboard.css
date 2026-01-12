@@ -209,3 +209,61 @@ main {
   background: #edf2f7;
   color: #2d3748;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .header-logo-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .dashboard-logo {
+    margin-right: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .admin-title {
+    font-size: 1.5rem;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .dashboard-link {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .logout-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .summary-section {
+    gap: 15px;
+  }
+
+  .summary-card {
+    width: 100%;
+    min-width: auto;
+    padding: 20px;
+  }
+}
