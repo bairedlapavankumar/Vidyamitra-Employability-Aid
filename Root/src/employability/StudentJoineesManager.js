@@ -121,7 +121,7 @@ function StudentJoineesManager() {
                                 <td>{item.year}</td>
                                 <td>
                                     <a
-                                        href={`/newsletters/pdf?url=${encodeURIComponent(`http://localhost:5000${item.fileUrl}`)}`}
+                                        href={`/newsletters/pdf?url=${encodeURIComponent(`${API_URL}${item.fileUrl}`)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-action btn-open"
