@@ -82,8 +82,8 @@ function UserDashboard() {
     <div className="user-dashboard">
       <header className="dashboard-header">
         <div className="header-content">
-          <img src={logo} alt="Vidyamitra Logo" style={{ height: '85px' }} />
-          <h1 style={{ flex: 1, textAlign: 'center' }}>📚 Learning Materials</h1>
+          <img src={logo} alt="Vidyamitra Logo" className="dashboard-logo" />
+          <h1 className="dashboard-title">📚 Learning Materials</h1>
           <button onClick={handleLogout} className="logout-btn">
             Logout
           </button>

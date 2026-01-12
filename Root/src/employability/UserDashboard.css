@@ -318,3 +318,46 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
+
+/* Mobile Header Styles */
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .dashboard-logo {
+        height: 60px !important;
+        /* Smaller logo on mobile */
+    }
+
+    .dashboard-title {
+        font-size: 1.5rem !important;
+        margin: 0.5rem 0 !important;
+    }
+
+    .logout-btn {
+        width: 100%;
+        max-width: 200px;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Default Styles */
+.dashboard-logo {
+    height: 85px;
+    width: auto;
+}
+
+.dashboard-title {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
