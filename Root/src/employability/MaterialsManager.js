@@ -130,25 +130,16 @@ function MaterialsManager() {
 
   return (
     <div className="materials-container">
-      <img src={logo} alt="Vidyamitra Logo" style={{ position: 'absolute', top: '20px', left: '20px', height: '100px', zIndex: 1000 }} />
-      <button
-        onClick={() => navigate("/employability-aid/admin")}
-        style={{
-          position: "absolute",
-          top: "20px",
-          right: "20px",
-          padding: "10px 20px",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-          zIndex: 1000
-        }}
-      >
-        Back
-      </button>
-      <div className="materials-title">Materials</div>
+      <div className="manager-header">
+        <img src={logo} alt="Vidyamitra Logo" className="manager-logo" />
+        <h1 className="materials-title">Materials</h1>
+        <button
+          onClick={() => navigate("/employability-aid/admin")}
+          className="manager-back-btn"
+        >
+          Back
+        </button>
+      </div>
 
       {error && <div className="materials-error">{error}</div>}
 

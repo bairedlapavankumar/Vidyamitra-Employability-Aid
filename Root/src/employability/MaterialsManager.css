@@ -12,13 +12,72 @@
   color: #333;
 }
 
+/* Header Styles */
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.manager-logo {
+  height: 80px;
+  width: auto;
+}
+
 .materials-title {
   font-size: 2.2rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 30px;
+  margin: 0;
   text-align: center;
+  flex: 1;
   letter-spacing: -0.5px;
+}
+
+.manager-back-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.manager-back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Header Responsiveness */
+@media (max-width: 768px) {
+  .materials-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .manager-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .manager-logo {
+    height: 60px;
+  }
+
+  .materials-title {
+    font-size: 1.8rem;
+    width: 100%;
+    order: 2;
+  }
+
+  .manager-back-btn {
+    width: 100%;
+    order: 3;
+  }
 }
 
 .materials-error {
