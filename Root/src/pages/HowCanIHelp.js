@@ -17,8 +17,8 @@ const HowCanIHelp = () => {
 
                 <h3 style={{ color: 'purple', textTransform: 'uppercase', marginTop: '20px', textDecoration: 'underline' }}>CONTRIBUTIONS</h3>
                 <p>a) &nbsp;&nbsp;Contribute Rs.1000/- or more and be a <strong>WELL-WISHER</strong>.</p>
-                <p>b) &nbsp;&nbsp;Contribute Rs.30,000/- or more and be a <strong>SPONSOR</strong>.</p>
-                <p style={{ marginLeft: '20px' }}>(Sponsorship – Rs.30,000/year/student)</p>
+                <p>b) &nbsp;&nbsp;Contribute Rs.60,000/- or more and be a <strong>SPONSOR</strong>.</p>
+                <p style={{ marginLeft: '20px' }}>(Sponsorship – Rs.60,000/year/student)</p>
                 <p>c) &nbsp;&nbsp;Contribute Rs.10.00 Lakhs or more and be a <strong>CORPUS FUND PATRON</strong></p>
 
                 <p style={{ marginTop: '20px' }}>WE REQUEST YOU TO CONTRIBUTE TOWARDS YEARLY EXPENDITURE AS WELL AS TOWARDS OUR CORPUS FUND.</p>

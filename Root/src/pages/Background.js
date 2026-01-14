@@ -13,10 +13,10 @@ const Background = () => {
 
             <div style={{ marginTop: '20px' }}>
                 <p>
-                    The founding Trustees of the Vidyamitra Trust in their individual capacity have been supporting <b><u>students</u></b> since 1992. Initial support was to SOS Children's Village, where one child was sponsored in 1992.
+                    The founding Trustees of the Vidyamitra Trust in their individual capacity have been supporting <b><u>students</u></b> since 1992. Initial support was to SOS Children's Village, where the first child was sponsored in 1992.
                 </p>
                 <p style={{ marginTop: '10px' }}>
-                    Similarly the Trustees in their individual capacity have been extending total <b><u>educational support</u></b> to <b><u>children at school</u></b> and college level in Hyderabad. They are now supporting about 140 students.
+                    Similarly the Trustees in their individual capacity have been extending total <b><u>educational support</u></b> to <b><u>children at school</u></b> and college level in Hyderabad.
                 </p>
                 <p style={{ marginTop: '10px' }}>
                     The Trustees decided to formalize this activity and enhance the scope and coverage of the same. With this in view a Trust in the name and style of VIDYAMITRA TRUST was formed on 07/05/2007.
