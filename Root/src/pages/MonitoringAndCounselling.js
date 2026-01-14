@@ -16,7 +16,6 @@ const MonitoringAndCounselling = () => {
                     <li style={{ marginBottom: '10px' }}>Monitoring the progress and needs of the beneficiaries is an important activity of the Trust.</li>
                     <li style={{ marginBottom: '10px' }}>With frequent visits to the Institutions and interaction with the Teachers, the Trust is always apprised of the beneficiary's situation.</li>
                     <li style={{ marginBottom: '10px' }}>Additional academic support is provided by arranging special study material and individual tutoring.</li>
-                    <li style={{ marginBottom: '10px' }}>Periodic reports on the beneficiaries will be sent to the concerned sponsor. The sponsor is encouraged to keep in touch, counsel and advise the beneficiary to improve their performance.</li>
                 </ul>
             </div>
 

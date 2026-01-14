@@ -18,7 +18,7 @@ const Objectives = () => {
             <div style={{ marginTop: '20px' }}>
                 <ol style={{ listStyleType: 'decimal', marginLeft: '20px' }}>
                     <li style={{ marginBottom: '10px' }}>
-                        To provide fees, books, freeships and /or scholarships to deserving student.
+                        To provide fees, books, freeships and /or scholarships to deserving students.
                     </li>
                     <li style={{ marginBottom: '10px' }}>
                         To arrange loans for pursuance of higher studies and advancement of education.

@@ -23,14 +23,12 @@ const TypicalYearlyExpenditure = () => {
                             <td style={{ borderRight: '1px solid #999', padding: '5px', verticalAlign: 'top', width: '30px' }}>1)</td>
                             <td style={{ borderRight: '1px solid #999', padding: '5px', verticalAlign: 'top' }}>
                                 <div style={{ marginBottom: '10px' }}>Intermediate (2 years)</div>
-                                <div style={{ marginTop: '20px' }}>Some students get concessions, then the cost is</div>
-                                <div style={{ fontWeight: 'bold' }}>Typical costs for 2 years would be between Rs.50, 000 to Rs.80, 000</div>
+                                <div style={{ fontWeight: 'bold' }}>Typical costs for 2 years would be Rs.80, 000</div>
                             </td>
                             <td style={{ padding: '5px', verticalAlign: 'top', width: '300px' }}>
                                 <div>Yearly Tuition - Rs.25, 000</div>
                                 <div style={{ borderBottom: '1px solid black' }}>Miscellaneous/yr - Rs.15, 000</div>
                                 <div style={{ fontWeight: 'bold' }}>Total/yr - Rs.40, 000</div>
-                                <div>Rs.25, 000</div>
                             </td>
                         </tr>
 
@@ -40,14 +38,12 @@ const TypicalYearlyExpenditure = () => {
                             <td style={{ borderRight: '1px solid #999', padding: '5px', verticalAlign: 'top' }}>
                                 <div>BSc. (Nursing)- 4 years</div>
                                 <div style={{ marginBottom: '10px' }}>B.Com (CA)) - 4 years</div>
-                                <div>Rs.90, 000/yr As a Day-Scholar</div>
-                                <div>Rs.1.15, 000/yr as a Hosteller</div>
-                                <div style={{ fontWeight: 'bold', marginTop: '5px' }}>Typical Cost for the 4 years would be between Rs.2,00,000/- to Rs.4,00,000/-.</div>
+                                <div>Rs.1,00,000/yr as a Hosteller</div>
+                                <div style={{ fontWeight: 'bold', marginTop: '5px' }}>Typical Cost for the 4 years would be Rs.4,00,000/-.</div>
                             </td>
                             <td style={{ padding: '5px', verticalAlign: 'top' }}>
                                 <div>Concessional Tuition fees/yr-Rs.30,000</div>
                                 <div>Miscellaneous/yr - Rs.20, 000</div>
-                                <div>(Inc bus pass)</div>
                                 <div style={{ fontWeight: 'bold' }}>Hostel/yr - Rs.50, 000</div>
                             </td>
                         </tr>
@@ -57,20 +53,20 @@ const TypicalYearlyExpenditure = () => {
                             <td style={{ borderRight: '1px solid #999', padding: '5px', verticalAlign: 'top' }}>3)</td>
                             <td style={{ borderRight: '1px solid #999', padding: '5px', verticalAlign: 'top' }}>
                                 <div style={{ marginBottom: '10px' }}>Engineering (4 years)</div>
-                                <div>Rs.1,40,000/yr As a Day-Scholar</div>
-                                <div>Rs.1,75, 000/yr As a Hosteller</div>
-                                <div style={{ fontWeight: 'bold', marginTop: '5px' }}>Typical Cost for the 4 years would be between Rs.5,60,000/- to Rs.7,00,000/-.</div>
+                                <div>Rs.1,60,000/yr As a Day-Scholar</div>
+                                <div>Rs.2,15, 000/yr As a Hosteller</div>
+                                <div style={{ fontWeight: 'bold', marginTop: '5px' }}>Typical Cost for the 4 years would be between Rs.6,40,000/- to Rs.8,60,000/-.</div>
                             </td>
                             <td style={{ padding: '5px', verticalAlign: 'top' }}>
-                                <div>Fees -Rs.1,15,000/-yr</div>
+                                <div>Fees -Rs.1,35,000/-yr</div>
                                 <div>Bus ets -Rs.25, 000-yr</div>
-                                <div>Hostel/yr -Rs.60, 000/-yr</div>
+                                <div>Hostel/yr -Rs.80, 000/-yr</div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p style={{ marginTop: '15px' }}>Depending on colleges there would be some reduction in expenditure.</p>
+                <p style={{ marginTop: '15px' }}>Depending on colleges there would be some changes in expenditure.</p>
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
