@@ -111,7 +111,7 @@ function UserDashboard() {
       <header className="dashboard-header">
         <div className="header-content">
           <img src={logo} alt="Vidyamitra Logo" className="dashboard-logo" />
-          <h1 className="dashboard-title">📚 Learning Materials (v2)</h1>
+          <h1 className="dashboard-title">📚 Learning Materials</h1>
           <button onClick={handleLogout} className="logout-btn">
             Logout
           </button>
