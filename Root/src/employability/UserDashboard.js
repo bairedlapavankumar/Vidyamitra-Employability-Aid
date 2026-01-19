@@ -10,6 +10,7 @@ function UserDashboard() {
   const [selectedFolder, setSelectedFolder] = useState("");
   const [loading, setLoading] = useState(true);
   const [showFolders, setShowFolders] = useState(false); // Mobile toggle
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -84,9 +85,10 @@ function UserDashboard() {
   };
 
   // Filter materials based on selection
-  const filteredMaterials = selectedFolder
+  const filteredMaterials = (selectedFolder
     ? materials.filter(m => m.folder === selectedFolder)
-    : materials;
+    : materials
+  ).filter(m => m.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
   // Group materials by folder
   const groupedMaterials = filteredMaterials.reduce((acc, material) => {
@@ -168,6 +170,17 @@ function UserDashboard() {
               <span>{selectedFolder}</span>
             </div>
           )}
+
+          {/* Search Bar */}
+          <div className="search-bar-container">
+            <input
+              type="text"
+              placeholder="🔍 Search materials..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="search-input"
+            />
+          </div>
 
           {filteredMaterials.length === 0 ? (
             <div className="empty-state">
