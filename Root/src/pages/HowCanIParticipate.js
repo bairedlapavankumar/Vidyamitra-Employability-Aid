@@ -21,7 +21,7 @@ const HowCanIParticipate = () => {
                 <h3 style={{ color: 'purple', textTransform: 'uppercase', marginTop: '20px' }}>SPONSORSHIP:</h3>
                 <p>A beneficiary would be identified and would be deemed to be the sponsored student of the sponsor.<br />
                     Sponsorship must be for the entire duration of the course.<br />
-                    <a href="#" style={{ color: 'blue' }}>For amounts in USD.</a></p>
+                    <a href="#!" style={{ color: 'blue' }}>For amounts in USD.</a></p>
 
                 <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px', border: '1px solid #ccc' }}>
                     <thead>

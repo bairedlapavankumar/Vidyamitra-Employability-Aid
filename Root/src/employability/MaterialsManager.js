@@ -16,6 +16,7 @@ function MaterialsManager() {
 
   useEffect(() => {
     fetchFolders();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchMaterials();
   }, [filterFolder]);
 

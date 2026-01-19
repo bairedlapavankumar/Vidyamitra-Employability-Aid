@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 // Adjust the path if your image is in another folder
-import logo from '../assets/vidyamitra_logo.png';
 import heroImage from '../assets/landing_hero.png';
 import "./LandingPage.css";
 
