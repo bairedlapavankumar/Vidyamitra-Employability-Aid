@@ -204,7 +204,7 @@
 
 .materials-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -230,6 +230,25 @@
 .material-icon {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.material-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.material-card:hover .material-thumbnail {
+    transform: scale(1.05);
 }
 
 .material-info {

@@ -25,13 +25,10 @@ const FormationAndFunding = () => {
                     The amount required for education support to students is being brought by the trustees in their individual capacity.
                 </p>
                 <p style={{ marginTop: '10px' }}>
-                    For the academic year 2012-2013 and onwards the Trust from the academic year 2012-2013, the Trust has expand its activities. The Trust feels it has the capacity to extend financial support for education to cover up to 200 students without diluting its commitment to have regular monitoring of the student's academic progress and to provide appropriate counseling to the students and their families whenever necessary.
+                    For the academic year 2012-2013 and onwards the Trust from the academic year 2012-2013, the Trust has expanded its activities. The Trust feels it has the capacity to extend financial support for education to cover up to 200 students without diluting its commitment to have regular monitoring of the student's academic progress and to provide appropriate counseling to the students and their families whenever necessary.
                 </p>
                 <p style={{ marginTop: '10px' }}>
-                    The Trust has been able to run all the activities entirely from the trustees own funds.
-                </p>
-                <p style={{ marginTop: '10px' }}>
-                    It is very gratifying that past beneficiaries are contributing enthusiastically to the Trust. Similarly some close associates/relatives of the Trustee too have been contributing. The total amounts received from our past beneficiaries/associates/relatives has been kept as a corpus fund. This corpus fund (inclusive of interest earned) has grown to approx 1.5Cr. We hope to increase the Corpus to Rs.5 Cr. So that the Trust, in future, could function purely on the interest income of the Corpus fund.
+                    It is very gratifying that past beneficiaries are contributing enthusiastically to the Trust. Similarly some close associates/relatives of the Trustee too have been contributing. The total amounts received from our past beneficiaries/associates/relatives has been kept as a corpus fund. This corpus fund (inclusive of interest earned) has grown to approx 6.0 Cr. We hope to increase the Corpus to Rs.10.0 Cr. So that the Trust, in future, could function purely on the interest income of the Corpus fund.
                 </p>
             </div>
 

@@ -38,6 +38,30 @@ function UserDashboard() {
     return file.url;
   };
 
+  const getThumbnailUrl = (file) => {
+    if (!file || !file.url) return null;
+
+    // For images, use the original URL
+    if (file.format === 'jpg' || file.format === 'png' || file.format === 'jpeg' || file.format === 'gif') {
+      return file.url;
+    }
+
+    // For videos (Cloudinary), generate a thumbnail
+    if ((file.format === 'mp4' || file.format === 'webm' || file.format === 'mov') && file.url.includes('/upload/')) {
+      // Replace extension with .jpg for thumbnail
+      let url = file.url;
+      const lastDotIndex = url.lastIndexOf('.');
+      if (lastDotIndex !== -1) {
+        url = url.substring(0, lastDotIndex) + '.jpg';
+      } else {
+        url = url + '.jpg';
+      }
+      return url;
+    }
+
+    return null;
+  };
+
   const fetchMaterials = async () => {
     setLoading(true);
     try {
@@ -166,9 +190,21 @@ function UserDashboard() {
                     {folderMaterials.map((material, idx) => (
                       <div key={`${material.id}-${idx}`} className="material-card">
                         <div className="material-icon">
-                          {material.format === 'pdf' ? '📄' :
-                            material.format === 'jpg' || material.format === 'png' ? '🖼️' :
-                              material.format === 'mp4' ? '🎥' : '📎'}
+                          {getThumbnailUrl(material) ? (
+                            <img
+                              src={getThumbnailUrl(material)}
+                              alt={material.name}
+                              className="material-thumbnail"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.parentElement.classList.add('fallback-icon');
+                              }}
+                            />
+                          ) : (
+                            material.format === 'pdf' ? '📄' :
+                              material.format === 'jpg' || material.format === 'png' ? '🖼️' :
+                                material.format === 'mp4' ? '🎥' : '📎'
+                          )}
                         </div>
                         <div className="material-info">
                           <h4 className="material-name">{material.name}</h4>
