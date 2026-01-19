@@ -13,7 +13,7 @@ const HowCanIParticipate = () => {
 
             <div style={{ marginTop: '20px', fontSize: '14px', lineHeight: '1.6' }}>
                 <h3 style={{ color: 'purple', textTransform: 'uppercase' }}>BE A SPONSOR</h3>
-                <p>You can underwrite to support one or more students for the entire duration of the chosen course. Many options are available. The term could be anywhere from 3yrs to 7yrs. The cost for the courses would be in the range, Rs.12,00,000/- to Rs.18,00,000/-.</p>
+                <p>You can underwrite to support one or more students for the entire duration of the chosen course. Many options are available. The term could be anywhere from 3yrs to 7yrs. The cost for the courses would be in the range, Rs.2,00,000/- to Rs.8,00,000/-.</p>
 
                 <h3 style={{ color: 'purple', textTransform: 'uppercase', marginTop: '20px' }}>BE A DONOR</h3>
                 <p>If you decide not to have a long-term association with the Trust but would still like to participate, you could make periodic financial contributions of any amount. The details of expenditure towards full sponsorship are given here.</p>
@@ -64,7 +64,7 @@ const HowCanIParticipate = () => {
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>2,00,000</td>
-                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>5,00,000</td>
+                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>2,00,000</td>
                         </tr>
                         <tr>
                             <td style={{ border: '1px solid #ccc', padding: '5px' }}>Intermediate + B.sc (Nursing)</td>
@@ -73,7 +73,7 @@ const HowCanIParticipate = () => {
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,00,000</td>
-                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>3,00,000</td>
+                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,00,000</td>
                         </tr>
                         <tr>
                             <td style={{ border: '1px solid #ccc', padding: '5px' }}>Intermediate + Graduation</td>
@@ -82,7 +82,7 @@ const HowCanIParticipate = () => {
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>75,000</td>
-                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,50,000</td>
+                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>75,000</td>
                         </tr>
                         <tr>
                             <td style={{ border: '1px solid #ccc', padding: '5px' }}>Engg</td>
@@ -100,7 +100,7 @@ const HowCanIParticipate = () => {
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,40,000</td>
                             <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,40,000</td>
-                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>2,80,000</td>
+                            <td style={{ border: '1px solid #ccc', padding: '5px', textAlign: 'right' }}>1,40,000</td>
                         </tr>
                         <tr>
                             <td style={{ border: '1px solid #ccc', padding: '5px' }}>B.sc (Nursing)</td>
