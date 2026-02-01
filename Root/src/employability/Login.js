@@ -22,8 +22,12 @@ function Login() {
       } else {
         navigate("/employability-aid/user");
       }
-    } catch {
-      setMsg("Login failed. Try again.");
+    } catch (err) {
+      if (err.response && err.response.data && err.response.data.message) {
+        setMsg(err.response.data.message);
+      } else {
+        setMsg("Login failed. Try again.");
+      }
     }
   };
 

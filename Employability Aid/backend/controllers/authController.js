@@ -67,8 +67,15 @@ exports.login = async (req, res) => {
   }
 
   try {
-    // Find user by email
-    const user = await User.findOne({ email });
+    // Check for hardcoded admin first (already done above)
+
+    // Find user by email or username
+    const user = await User.findOne({
+      $or: [
+        { email: email },
+        { username: email }
+      ]
+    });
     if (!user) return res.status(401).json({ message: "Invalid credentials" });
 
     // Check password
