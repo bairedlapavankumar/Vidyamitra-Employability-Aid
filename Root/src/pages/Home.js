@@ -28,7 +28,7 @@ const Home = () => {
             </div>
 
             <div className="disclaimer-section">
-                <p>a) All donations are eligible for Income Tax Exemption under section 80G (5 ) (vi ) of I.T. Act 1961, vide F.No. DIT(E) Hyd / 80G / 27 (09 ) 07 - 08.</p>
+                <p>a) All donations are eligible for Income Tax Exemption under section 80G (5) of I.T. Act 1961, vide DIN: ITBA/EXM/F/EXM44/2025-26/1085732667(1)</p>
 
             </div>
         </div>
